@@ -49,21 +49,37 @@ Model Waveform
 
 Program
 Am=7.1;
+
 fm=557;
+
 fc=5570;
+
 fs=55700;
+
 t=0:1/fs:2/fm;
+
 m=Am*cos(2*3.14*fm*t);
+
 subplot(3,1,1);
+
 plot(t,m);
+
 Ac=14.2;  
+
 c=Ac*cos(2*3.14*fc*t);
+
 subplot(3,1,2);
+
 plot(t,c);
+
 s1=(Ac+m).*cos(2*3.14*fc*t);
+
 s2=(Ac-m).*cos(2*3.14*fc*t);
+
 s=(s1-s2);
+
 subplot(3,1,3);
+
 plot(t,s);
 
 
@@ -72,8 +88,9 @@ Output Graph
 
 
 
-Tablular Column
-![Exp 2 Tabulation](https://github.com/user-attachments/assets/f86b68bb-7c79-4aea-b732-cddb3444c380)
+Tabular Column
+![EXP 2 DSBSC Tabulation](https://github.com/user-attachments/assets/8fec0789-08e8-4f4d-9edf-33593a44d749)
+
 
 
 Result
